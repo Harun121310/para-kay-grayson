@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
+:root{
+    --accent-color: #F4B400;
+    --base-color: #FFF8E7;
+    --pushpin-red: #4A403A;
+    --input-color: #F7EFD6;
+    --corkboard-brown: #C49A6C;
+    ---card-bgow: #FFE066;
+    ---card-bg: #A7C7E7;
+    --pushpin-red: #D64550;
+    --shadow-color: #B8A898;
+    --header-strip: #E8CFAF;
+    --card-bg: #FFF4D6;
+    --hover-highlight: #FFD891;
+}
+html, body {
+    font-family: "Stack Sans Text", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--header-strip);
+}
+
+.header{
+    background-color: var(--corkboard-brown); 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 60px;
+    min-width: 1rem;
+    display: flex;
+    border-radius: 0 0 15px 15px;
+}
+
+.logo {
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--border-color);
+    background-color: var(--pushpin-red);
+    border-radius: 16px;
+}
+
+.header h2 {
+    margin: 10px;
+}
+
+.mainContainer {
+    margin: 0;
+    display: flex; 
+    align-items: stretch;  
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 20px; 
+}
+
+.asideRight, .asideLeft, .middle{
+    flex: 1;
+    display: flex;
+    justify-content: top;
+   gap: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right1 h3, .right2 h3, .mid1 h3{
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+}
+
+.mid2 h3 {
+   position: absolute;
+   bottom: 305px;
+   left: 0;
+}
+
+.right3 h3 {
+position: absolute;
+bottom: 272px;
+left: -38px;
+}
+
+.left1 {
+    padding-top: 10px ;
+    margin-top: 50px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    height: max(500px, 30%);
+    width: 20rem;            
+    max-width: 300px;       
+    border: 2px dotted var(--pushpin-red);
+}
+
+.left1 h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--pushpin-red);
+}
+
+.left1 p {
+    position: relative;
+   top: 350px;
+}
+
+.right2Container, .mid1Container, .mid2Container{
+margin-top: 25px;
+}
+
+.right3Container {
+    margin-top: 50px;
+}
+
+.mid1 {
+   display: flex;
+    justify-content: center;   
+    align-items: center;  
+    flex-direction: column; 
+    margin-top: 10px; 
+    height: 50px;
+    width: 35rem;
+    background: var(--card-bg);
+    border-radius: 15px;
+    position: relative;   
+}
+
+.mid2 {
+   display: flex;
+    justify-content: center;   
+    align-items: center;  
+    flex-direction: column; 
+    margin-top: 10px; 
+    height: 20rem;
+    width: 35rem;
+    background: var(--card-bg);
+    border-radius: 15px;
+    position: relative;   
+}
+
+
+.right1 { 
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    height: 50px;
+    width: 20rem;
+    background: skyblue;
+    border-radius: 15px;
+    position: relative;    
+    margin-top: 50px;
+}
+
+.right2 { 
+    display: flex;
+    justify-content: center;   
+    align-items: center;  
+    flex-direction: column; 
+    margin-top: 10px; 
+    height: 50px;
+    width: 20rem;
+    background: var(--card-bg);
+    border-radius: 15px;
+    position: relative;   
+}
+
+.right3 { 
+    display: flex;
+    flex-direction: column; 
+    margin-top: 0; 
+    height: 18rem;
+    width: 15rem;
+    background: var(--card-bg) url('pics/bday3.jpeg') no-repeat center center;
+    background-size: cover; 
+    border-radius: 15px;
+    position: relative;
+}
+
+.profile{
+    background: var(--card-bg) url('pics/man.png') no-repeat center center;
+    background-size: cover;
+    height: 105px;
+    width: 105px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile h2 {
+    padding: 7px;
+    font-size: 20px;
+    align-self: center;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    left: 3px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.right3Background{
+    position: relative;
+}
+
+.dandt {
+        position: absolute;
+     padding: 10px;
+      font-family: Arial, sans-serif;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    flex-direction: column;
+    width: 235px;
+    height: 200px;
+margin-top: 95px;
+margin-right: 10px;
+   right: 0;
+   border-radius: 55% 0 0 0;
+}
+
+.dandt i {
+    color: black;
+    margin-left: 5px;
+    position: relative;
+    top: 25px;
+    right: 10px;
+}
+
+.dandt h2 {
+    margin: 0px 5px;
+    color: black;
+    
+}
+
+#time, #date {
+    color: black;
+    font-size: 15px;
+}
+
+#date {
+    position: relative;
+    top: 22px;
+    right: 14px
+}
+
+#time {
+    position: relative;
+    top: 22px;
+    right: 10px
+}
+
+#quoteBox {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    max-width: 80%;
+    text-align: center;
+}
+
+#weather-widget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;  
+    width: 100%;
+}
+
+.weather-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.weather-icon img {
+    position: relative;
+   top: 7px;
+   right: 10px;
+    width: 65px;
+    height: 65px;
+}
+
+.city-name {
+    position: relative;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.temperature {
+    position: relative;
+    right: 10px;
+    font-size: 20px;
+}
+
+@keyframes appear {
+    from {
+       scale: 0;
+    }
+    to {
+        scale: 1;
+    }
+}
